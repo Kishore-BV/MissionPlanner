@@ -18,12 +18,15 @@ namespace MissionPlanner
 
             if (Program.Logo != null)
             {
-                pictureBox1.BackgroundImage = MissionPlanner.Properties.Resources.bgdark;
-                pictureBox1.Image = Program.Logo;
-                pictureBox1.Visible = true;
+                this.BackgroundImage = MissionPlanner.Properties.Resources.bgdark;
             }
 
             Console.WriteLine("Splash .ctor");
+        }
+
+        private void Splash_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
